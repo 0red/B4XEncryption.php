@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <script type="text/javascript" src="crypto-js.js"></script>
+    <script type="text/javascript" src="B4XEncryption.js"></script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        let t0="Jacek ąśżźćń",pwd="pwd";
+
+        console.log("t0:",t0);
+        t1=B4X_Encrypt(t0,pwd)
+        console.log("t1: "+t1);
+        t2=B4X_Decrypt(t1,pwd)
+        console.log("t2: "+t2);
+    </script>    
+</body>
+</html>
